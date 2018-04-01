@@ -1,0 +1,129 @@
+﻿@model Beca.Models.Encuesta
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Completa tus datos y realiza la encuesta</h2>
+
+<h4>Encuesta</h4>
+<hr />
+<p></p>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Nombre" class="control-label"></label>
+                <input asp-for="Nombre" class="form-control" />
+                <span asp-validation-for="Nombre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Apellido" class="control-label"></label>
+                <input asp-for="Apellido" class="form-control" />
+                <span asp-validation-for="Apellido" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dni_Libreta" class="control-label"></label>
+                <input asp-for="Dni_Libreta" class="form-control" />
+                <span asp-validation-for="Dni_Libreta" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Domicilio" class="control-label"></label>
+                <input asp-for="Domicilio" class="form-control" />
+                <span asp-validation-for="Domicilio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Localidad" class="control-label"></label>
+                <input asp-for="Localidad" class="form-control" />
+                <span asp-validation-for="Localidad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Telefono" class="control-label"></label>
+                <input asp-for="Telefono" class="form-control" />
+                <span asp-validation-for="Telefono" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Pregunta_Aumento_Transporte" class="control-label">
+                    ¿Cómo sentís que afectó el aumento de transporte para tu permanencia en Psico?<br />
+                    nada/
+                    poco/
+                    mucho/
+                    muy mucho/
+                    una banda
+                </label>
+                <input asp-for="Pregunta_Aumento_Transporte" class="form-control"  />
+                <span asp-validation-for="Pregunta_Aumento_Transporte" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Pregunta_Boleto_Edu" class="control-label">
+                    ¿Crees que lxs estudiantes universitarios deberíamos tener BOLETO EDUCATIVO?<br />
+                    sí/
+                    no
+                </label>
+                <input asp-for="Pregunta_Boleto_Edu" class="form-control" />
+                <span asp-validation-for="Pregunta_Boleto_Edu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Pregunta_Beca_Transporte" class="control-label">
+                    ¿Crees que la Universidad de Buenos Aires debería garantizar becas de transporte para lxs estudiantes?<br />
+                    Sí/
+                    no
+                </label>
+                <input asp-for="Pregunta_Beca_Transporte" class="form-control" />
+                <span asp-validation-for="Pregunta_Beca_Transporte" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Pregunta_Politica_Permanencia" class="control-label">
+                    ¿Consideras que las políticas del CEP (becas de apuntes, menú estudiantil, precios congelados, etc) son una ayuda para que lxs estudiantes accedamos y permanezcamos en psico?<br />
+                    -sí/
+                    -no
+                </label>
+                <input asp-for="Pregunta_Politica_Permanencia" class="form-control" />
+                <span asp-validation-for="Pregunta_Politica_Permanencia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Pregunta_Politica_Iniciativas" class="control-label">
+                    ¿Qué espacios e iniciativas del CEP utilizas en tu cursada?<br />
+                    Lockers/
+                    Espacio de Lectura/
+                    Pedidos online/
+                    Bibliopsi.org/
+                    Psi Trabajo
+                </label>
+                <input asp-for="Pregunta_Politica_Iniciativas" class="form-control" />
+                <span asp-validation-for="Pregunta_Politica_Iniciativas" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Pregunta_Comentarios" class="control-label">Dejanos tu comentario/ propuesta/ sugerencia/ aporte, porque este NuevoCEP lo construirmos entre todes. Tu opinion cuenta. Es necesaria. </label>
+                <input asp-for="Pregunta_Comentarios" class="form-control" />
+                <span asp-validation-for="Pregunta_Comentarios" class="text-danger"></span>
+            </div>
+            <!--
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input asp-for="Chequeado" /> @Html.DisplayNameFor(model => model.Chequeado)
+                    </label>
+                </div>
+            </div>
+             -->
+            <div class="form-group">
+                <input type="submit" value="Finalizar" class="btn btn-info" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

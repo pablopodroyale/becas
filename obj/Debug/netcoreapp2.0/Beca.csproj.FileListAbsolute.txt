@@ -1,0 +1,12 @@
+D:\Trabajo web\Becas-Cep\Beca\Beca\bin\Debug\netcoreapp2.0\Beca.deps.json
+D:\Trabajo web\Becas-Cep\Beca\Beca\bin\Debug\netcoreapp2.0\Beca.runtimeconfig.json
+D:\Trabajo web\Becas-Cep\Beca\Beca\bin\Debug\netcoreapp2.0\Beca.runtimeconfig.dev.json
+D:\Trabajo web\Becas-Cep\Beca\Beca\bin\Debug\netcoreapp2.0\Beca.dll
+D:\Trabajo web\Becas-Cep\Beca\Beca\bin\Debug\netcoreapp2.0\Beca.pdb
+D:\Trabajo web\Becas-Cep\Beca\Beca\obj\Debug\netcoreapp2.0\Beca.csproj.CoreCompileInputs.cache
+D:\Trabajo web\Becas-Cep\Beca\Beca\obj\Debug\netcoreapp2.0\Beca.AssemblyInfoInputs.cache
+D:\Trabajo web\Becas-Cep\Beca\Beca\obj\Debug\netcoreapp2.0\Beca.AssemblyInfo.cs
+D:\Trabajo web\Becas-Cep\Beca\Beca\obj\Debug\netcoreapp2.0\Beca.dll
+D:\Trabajo web\Becas-Cep\Beca\Beca\obj\Debug\netcoreapp2.0\Beca.pdb
+D:\Trabajo web\Becas-Cep\Beca\Beca\obj\Debug\netcoreapp2.0\Beca.csprojResolveAssemblyReference.cache
+D:\Trabajo web\Becas-Cep\Beca\Beca\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
